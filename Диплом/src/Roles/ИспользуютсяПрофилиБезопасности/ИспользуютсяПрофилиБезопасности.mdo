@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06c6968c-27a2-43c4-ad3e-8ca1d02265b3">
+  <name>ИспользуютсяПрофилиБезопасности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Используются профили безопасности</value>
+  </synonym>
+</mdclass:Role>

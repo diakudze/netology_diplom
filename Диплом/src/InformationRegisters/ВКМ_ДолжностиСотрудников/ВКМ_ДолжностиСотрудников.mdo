@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="61ad8cfc-5f62-4b75-b0b1-2375af699275">
+  <producedTypes>
+    <selectionType typeId="d7d89be2-9b49-412c-b83f-bca7cec97396" valueTypeId="711bd95d-2f9e-46a1-84ac-695561d39d4d"/>
+    <listType typeId="81acb3dd-a2b1-41d1-a8c1-aac52325aa23" valueTypeId="429f1276-1b7b-44b9-9d18-2bb9dd4122d9"/>
+    <managerType typeId="9571a7ec-9d33-4731-801e-3980701bbce0" valueTypeId="2262578b-a9c6-4603-b4f2-af65193e0154"/>
+    <recordSetType typeId="3354d045-af3f-43a8-92fb-0e20990b582e" valueTypeId="baee1b4d-52d5-4df2-9f50-64572a64535b"/>
+    <recordKeyType typeId="cf48ae93-460b-4887-8a2c-f50e6fe03034" valueTypeId="f950f2e1-5c5d-4ae7-aa00-f63725a599f5"/>
+    <recordType typeId="03558ea2-bda4-47a4-a006-600043753c93" valueTypeId="e00e3714-0ad7-4413-90d0-3581b01a52f8"/>
+    <recordManagerType typeId="4313427b-f11b-4f90-9d4b-e65de4e6705c" valueTypeId="0d9e4098-4e4c-4f79-b0c2-57b732b5336a"/>
+  </producedTypes>
+  <name>ВКМ_ДолжностиСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Должности сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ad7f1bf3-72a3-4c93-bccd-e2af825119dd">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_ДолжностиСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8b5872f2-9c7f-41d1-83ba-f049332fc15e">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cb5224bc-b4cf-4392-b4a4-8c8c84823a3d">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c5945596-47b1-4e21-8b4a-ca674864bbd0">
+    <name>ТабельныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табельный номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd358f35-5a69-4e8c-b4de-6ec938ee7832">
+  <producedTypes>
+    <objectType typeId="c0f99a85-9465-4089-b5a9-e6611a60d0f8" valueTypeId="1d253292-d642-4073-83a2-30273396da01"/>
+    <refType typeId="010fa815-dfad-4b26-b471-9d41c596f890" valueTypeId="68982233-4ee7-4bd7-b649-9f0a1d245090"/>
+    <selectionType typeId="c66798ae-8f73-4edd-83b0-c83f759a6037" valueTypeId="522d6e73-0bc3-4295-8e28-ef71fa0b6b7f"/>
+    <listType typeId="8af059f9-2ad1-4f0c-8bb1-f607fdb03ce9" valueTypeId="ebd8b793-0dfe-40f9-a325-1849f7d66ea8"/>
+    <managerType typeId="2a2b9787-39db-4554-9238-2109bdfbae75" valueTypeId="42cf0974-1955-44cd-9526-7dcc54a9b624"/>
+  </producedTypes>
+  <name>ВКМ_ВидыНалогов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды налогов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВКМ_ВидыНалогов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВКМ_ВидыНалогов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Вид налогов</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="f446211f-7184-4822-999b-4c95f3553196">
+      <name>НДФЛ</name>
+      <description>НДФЛ</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

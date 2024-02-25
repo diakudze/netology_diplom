@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="121906c8-01d0-4023-86b8-54d0f20d1b1f">
+  <producedTypes>
+    <objectType typeId="0afb9b3f-87ac-494f-b901-45dca31e374c" valueTypeId="0bc97f0f-5c5b-4bb1-a273-791fb16d4119"/>
+    <managerType typeId="c32cfba2-b028-4c6e-bc5d-9add8dec9598" valueTypeId="8150dc4b-dba8-4155-a2c7-7a047ff708c9"/>
+  </producedTypes>
+  <name>ВКМ_МассовоеСозданиеАктов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Массовое создание актов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВКМ_МассовоеСозданиеАктов.Form.Форма</defaultForm>
+  <attributes uuid="82b4554c-2351-4807-9e5f-f8fa9bf64ab1">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="8868ec0f-5d12-412d-8fa7-5db1d0d50d59">
+    <producedTypes>
+      <objectType typeId="8cb45692-4317-4e15-97a6-f9618ed128e9" valueTypeId="2279ec6e-4841-4bf6-8177-5472e606df2f"/>
+      <rowType typeId="eefef783-e2de-4a74-a860-fffc56caf828" valueTypeId="d6c70086-2a4c-49f2-8170-7171ce812d5c"/>
+    </producedTypes>
+    <name>СписокДоговоровиРеализаций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список договорови реализаций</value>
+    </synonym>
+    <attributes uuid="276761d2-c4a7-4fbd-afbc-3b411996b0c6">
+      <name>Договор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ДоговорыКонтрагентов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="429453eb-e558-4050-843f-078524d42e24">
+      <name>РеализацияТоваровИУслуг</name>
+      <synonym>
+        <key>ru</key>
+        <value>Реализация товаров и услуг</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.РеализацияТоваровУслуг</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f4eb6f0a-8c5d-4f18-930a-3ab924e122f8">
+      <name>Контрагент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Контрагент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b460f61e-4d30-4c5f-a7a7-b9c8be900506">
+      <name>ОкончаниеПериода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Окончание периода</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d0f09fa3-1b69-4528-b52a-777b4f68f3d7">
+      <name>Организация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Организация</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Организации</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="a08c3ed4-fc29-4eec-8b18-ace0257aaf9e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

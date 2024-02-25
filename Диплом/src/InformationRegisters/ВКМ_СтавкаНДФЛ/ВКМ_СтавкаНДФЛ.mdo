@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58a3d9e3-3593-4290-a20b-c8a92ed7cbee">
+  <producedTypes>
+    <selectionType typeId="638b109b-0ccb-46d0-b154-3fdb6cbc7576" valueTypeId="db870eb1-57fe-450b-af63-d025a9d23d30"/>
+    <listType typeId="5dca2d43-51fe-4b49-a689-e5e9d8d06dcc" valueTypeId="47b83feb-4b1a-4657-b4c3-4c1ab193a4f8"/>
+    <managerType typeId="9b071079-0424-4f0f-b59a-ab218226e9bc" valueTypeId="a0ba8534-8422-426b-aaeb-3368670cc155"/>
+    <recordSetType typeId="9964288f-439a-4072-b108-041730174da6" valueTypeId="5f637c94-d0d9-46a4-b154-369fbb7a6dc3"/>
+    <recordKeyType typeId="bd0af261-211c-4df9-949a-e2cb67f171fb" valueTypeId="7cecf0aa-9c94-4ebf-8311-ddc101f99a68"/>
+    <recordType typeId="3ca786be-0a9c-4e83-9b2a-b2dd7262c777" valueTypeId="ae9de5fb-98b4-40e6-8d0d-567f2183350b"/>
+    <recordManagerType typeId="784f9f6d-d5cf-438d-9a3d-19f1c7eb4a67" valueTypeId="07b371df-d9f3-49a2-a334-d2770ee36cd9"/>
+  </producedTypes>
+  <name>ВКМ_СтавкаНДФЛ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставка НДФЛ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Ставка НДФЛ</value>
+  </recordPresentation>
+  <resources uuid="f74a7692-5d29-4c51-9b81-e5d378c6d7a7">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>0</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>100,00</value>
+    </maxValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:NumberValue">
+      <value>13</value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="ef7b6533-5bb9-48c4-9573-8748c9f85216">
+    <name>НДФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>НДФЛ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_ВидыНалогов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ВКМ_ВидыНалогов.НДФЛ</value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a51b7e28-cc9f-4645-b5d0-468e99d7f5b9">
+  <producedTypes>
+    <selectionType typeId="018341e1-e4a9-403e-b282-36be177c5db1" valueTypeId="eb352d05-9089-4000-a538-862fdb633327"/>
+    <listType typeId="db4ece15-2e3b-4218-9d78-c8cfbfaa2ff2" valueTypeId="5e0ad743-4447-49fe-8556-945b9e2f52d5"/>
+    <managerType typeId="3a3e52cf-cda5-484a-acc0-439f3b4b3288" valueTypeId="88db9448-3e29-412c-b5dc-7f5bac9ff780"/>
+    <recordSetType typeId="2a8fe1dd-9451-4937-9897-cbf8e9a9d246" valueTypeId="4c6ec4f2-16d7-4e5e-b082-4587a8efc1a2"/>
+    <recordKeyType typeId="822e0a36-6436-4d6c-b912-c8855ec79dc7" valueTypeId="fcf135a7-7109-44cb-9512-aea514870d4c"/>
+    <recordType typeId="cbfeae41-7b82-4e0a-8e1a-7752037b5597" valueTypeId="caebe808-06d9-42d1-b95e-14ebff0f83d9"/>
+    <recalcsType typeId="83e14e3c-8f56-43df-aeb5-a2dcbee22630" valueTypeId="7a99a881-21cd-48ca-ad61-a42adcd7d066"/>
+  </producedTypes>
+  <name>ВКМ_Удержания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удержания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <basePeriod>true</basePeriod>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_Удержания</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="13b0a8ac-8555-4081-8692-1025eab3e79f">
+    <name>СуммаНДФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма НДФЛ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="e3cbf106-43c9-48c5-a993-997bfc1a4d93">
+    <name>СтавкаНДФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка НДФЛ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="d205257e-675b-43f4-a847-7fc3f7c28708">
+    <name>ВидРасчетаНачисление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расчета начисление</value>
+    </synonym>
+    <type>
+      <types>ChartOfCalculationTypesRef.ВКМ_ДополнительныеНачисления</types>
+      <types>ChartOfCalculationTypesRef.ВКМ_ОсновныеНачисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="bdc633e8-c6aa-42e5-be60-56364e7bd344">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <baseDimension>true</baseDimension>
+  </dimensions>
+</mdclass:CalculationRegister>

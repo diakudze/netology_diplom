@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec985535-f31d-417d-8ed6-3b5614b87783">
+  <name>ИспользоватьУдалениеПомеченныхОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать удаление помеченных объектов</value>
+  </synonym>
+</mdclass:Role>

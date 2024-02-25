@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0a11fc03-67a0-4f28-b1ab-5ad9ce6d7dd9">
+  <name>ОтложенноеОбновлениеЗавершеноУспешно</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отложенное обновление завершено успешно</value>
+  </synonym>
+</mdclass:Role>

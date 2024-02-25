@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa827fee-0993-4cf3-8bdb-dba59bece073">
+  <name>РаботаВЛокальномРежиме</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа в локальном режиме</value>
+  </synonym>
+</mdclass:Role>

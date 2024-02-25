@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5774a7f0-ddfd-4d64-84d6-4a640aa6bfbd">
+  <name>ИспользоватьГруппыПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать группы пользователей</value>
+  </synonym>
+</mdclass:Role>

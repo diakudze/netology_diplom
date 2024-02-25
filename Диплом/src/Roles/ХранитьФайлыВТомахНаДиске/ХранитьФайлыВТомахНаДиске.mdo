@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e849c5aa-ae5d-4a93-8b27-a09df6a637aa">
+  <name>ХранитьФайлыВТомахНаДиске</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хранить файлы в томах на диске</value>
+  </synonym>
+</mdclass:Role>

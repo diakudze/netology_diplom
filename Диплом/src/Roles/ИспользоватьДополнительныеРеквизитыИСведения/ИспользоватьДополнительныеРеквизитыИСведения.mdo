@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c4a851e6-ff11-411a-99af-a32308c223e1">
+  <name>ИспользоватьДополнительныеРеквизитыИСведения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать дополнительные реквизиты и сведения</value>
+  </synonym>
+</mdclass:Role>

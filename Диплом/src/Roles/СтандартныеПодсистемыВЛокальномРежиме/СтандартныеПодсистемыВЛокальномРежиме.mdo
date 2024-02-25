@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9bb0bf13-69eb-4034-8e2e-e46f972921c5">
+  <name>СтандартныеПодсистемыВЛокальномРежиме</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стандартные подсистемы в локальном режиме</value>
+  </synonym>
+</mdclass:Role>

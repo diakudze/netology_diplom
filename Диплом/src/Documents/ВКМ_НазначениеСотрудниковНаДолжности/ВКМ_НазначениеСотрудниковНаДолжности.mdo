@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5696e84-e06e-4f6d-8b60-c70e49ae901f">
+  <producedTypes>
+    <objectType typeId="81535057-2324-4551-a6dd-cadb3e4f5731" valueTypeId="9ce24268-cbc7-4764-9f30-095edb066442"/>
+    <refType typeId="f0ea9bad-e104-49b8-99e6-6faeb4c69400" valueTypeId="77026705-ec53-4d13-bf8c-dc1c90c396b6"/>
+    <selectionType typeId="47f0da1e-3e92-472f-8856-94b2d4e1b5aa" valueTypeId="f6810f58-31d1-4c1a-a7ff-5ed0361715fb"/>
+    <listType typeId="13cf455c-730b-4c81-b4bc-0bdbcb4f574a" valueTypeId="063b7ff3-c138-421f-a615-80a1b5d95c57"/>
+    <managerType typeId="21082324-36c0-4929-8646-930b1ce1b36e" valueTypeId="4ade4932-ba15-4950-b41e-24fb402898ce"/>
+  </producedTypes>
+  <name>ВКМ_НазначениеСотрудниковНаДолжности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Назначение сотрудников на должности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВКМ_НазначениеСотрудниковНаДолжности.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Назначение сотрудников на должности</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Назначения сотрудников на должности</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВКМ_НазначениеСотрудниковНаДолжности.Form.ВКМ_ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.ВКМ_ДолжностиСотрудников</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="c66e475a-373e-4213-b19c-001705141be2">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7d77e195-9fb2-446f-9337-3c39ea10ec0b">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="25525ce3-54af-421d-8928-a154c484942f">
+    <name>ВКМ_ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="b2d78cb2-f785-4316-a228-38c73969f8ea">
+    <producedTypes>
+      <objectType typeId="362773ea-c6d7-47bb-9364-33404e8825ba" valueTypeId="afc5059a-bab2-4505-b85b-bb06d18884bb"/>
+      <rowType typeId="75462887-4434-4cc0-8379-94f0f6771c60" valueTypeId="cb219846-8497-4edd-aae0-54e1ca71f317"/>
+    </producedTypes>
+    <name>ДолжностиСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должности сотрудников</value>
+    </synonym>
+    <attributes uuid="d0ce4282-9e24-4052-816e-86f5ffcd0d04">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВКМ_Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="942706bb-720a-413d-a06f-4f8ce520f25e">
+      <name>Должность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Должность</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВКМ_ДолжностиСотрудников</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0d55dd02-ee9d-4ea9-8403-546722d990dc">
+      <name>ДатаНазначения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата назначения</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="35cf655b-f326-448f-bcb1-b08e06832cde">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВКМ_Подразделения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

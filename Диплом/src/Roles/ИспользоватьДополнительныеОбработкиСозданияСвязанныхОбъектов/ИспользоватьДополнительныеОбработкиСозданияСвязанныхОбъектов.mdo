@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dabd8530-3268-4149-811b-4a410b910446">
+  <name>ИспользоватьДополнительныеОбработкиСозданияСвязанныхОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать дополнительные обработки создания связанных объектов</value>
+  </synonym>
+</mdclass:Role>
